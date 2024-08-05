@@ -1,0 +1,31 @@
+.wrapper {
+  --accent-color: #0f6da1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 3px;
+  border: 1px solid var(--accent-color);
+
+  cursor: pointer;
+}
+
+.control {
+  display: none;
+}
+
+.control:checked + .icon {
+  opacity: 1;
+}
+
+.icon {
+  width: 65%;
+  height: fit-content;
+
+  opacity: 0;
+  color: var(--accent-color);
+}

@@ -1,0 +1,39 @@
+#westcomp-react-configurator {
+  --color-blue: #0f6da1;
+  --color-green: #2fae96;
+  --color-gray: #696969;
+  --color-white: #fff;
+  --color-black: #191919;
+  --color-background: #fff;
+}
+
+#westcomp-react-configurator *,
+#westcomp-react-configurator *::before,
+#westcomp-react-configurator *::after {
+  box-sizing: border-box;
+}
+
+#westcomp-react-configurator button {
+  display: block;
+  padding: 0;
+
+  font: inherit;
+
+  color: inherit;
+  background: none;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+#westcomp-react-configurator svg {
+  display: block;
+}
+
+#westcomp-react-configurator {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-background);
+}

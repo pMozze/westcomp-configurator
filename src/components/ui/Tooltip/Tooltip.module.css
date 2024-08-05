@@ -1,0 +1,27 @@
+.icon {
+  width: 18px;
+  height: 18px;
+  cursor: help;
+}
+
+.icon:hover svg {
+  fill: #bac8cf;
+}
+
+.icon:hover svg path {
+  fill: var(--color-white);
+}
+
+.wrapper {
+  max-width: 300px;
+  padding: 15px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  color: var(--color-gray);
+  background-color: var(--color-white);
+
+  border-radius: 6px;
+  border: 1px solid #bac8cf;
+}

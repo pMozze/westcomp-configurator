@@ -1,0 +1,35 @@
+.wrapper {
+  --accent-color: var(--color-green);
+
+  padding-inline: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 20px;
+  width: fit-content;
+  height: 20px;
+
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-gray);
+  background-color: var(--color-white);
+
+  border-radius: 6px;
+  border: 1px solid var(--accent-color);
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.wrapper:has(.control:checked) {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+
+.control {
+  display: none;
+}

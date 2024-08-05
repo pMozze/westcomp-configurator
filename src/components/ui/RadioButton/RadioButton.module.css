@@ -1,0 +1,36 @@
+.wrapper {
+  --accent-color: var(--color-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 100%;
+  border: 1px solid var(--accent-color);
+
+  cursor: pointer;
+}
+
+.wrapper::after {
+  opacity: 0;
+
+  display: block;
+  content: '';
+
+  width: 65%;
+  height: 65%;
+
+  border-radius: 100%;
+  background-color: var(--accent-color);
+}
+
+.wrapper:has(.control:checked)::after {
+  opacity: 1;
+}
+
+.control {
+  display: none;
+}
