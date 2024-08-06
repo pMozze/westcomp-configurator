@@ -1,5 +1,6 @@
 #westcomp-react-configurator {
   --color-blue: #0f6da1;
+  --color-blue-hover: #dcf1ff;
   --color-green: #2fae96;
   --color-gray: #696969;
   --color-white: #fff;
@@ -27,6 +28,10 @@
 
   cursor: pointer;
   user-select: none;
+}
+
+#westcomp-react-configurator button:disabled {
+  cursor: not-allowed;
 }
 
 #westcomp-react-configurator svg {

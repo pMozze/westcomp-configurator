@@ -1,0 +1,51 @@
+.wrapper {
+  padding-inline: 30px;
+  min-height: 32px;
+
+  display: grid;
+  grid-template-columns: 18px 1fr 18px 150px 100px;
+  grid-template-areas: 'radio-button name tooltip number-input price';
+}
+
+.wrapper > * {
+  margin-block: auto;
+}
+
+.wrapper:hover,
+.wrapper.selected {
+  background-color: var(--color-blue-hover);
+}
+
+.wrapper.selected .price {
+  font-weight: 700;
+}
+
+.name {
+  grid-area: name;
+  padding: 5px 10px 5px 20px;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  color: var(--color-black);
+}
+
+.tooltip {
+  grid-area: tooltip;
+}
+
+.numberInput {
+  grid-area: number-input;
+  margin: 0 0 0 10px;
+  height: auto;
+}
+
+.price {
+  grid-area: price;
+
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+
+  color: var(--color-black);
+}

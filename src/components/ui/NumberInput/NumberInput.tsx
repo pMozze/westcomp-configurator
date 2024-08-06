@@ -7,24 +7,27 @@ import MinusIcon from '@icons/minus.svg?react';
 import styles from './NumberInput.module.css';
 
 interface Props {
+  onChange?: (value: number) => void;
   defaultValue?: number;
   min?: number;
   max?: number;
   className?: string;
 }
 
-const NumberInput: FC<Props> = ({ defaultValue = 0, min = -Infinity, max = Infinity, className }) => {
+const NumberInput: FC<Props> = ({ onChange, defaultValue = 0, min = -Infinity, max = Infinity, className }) => {
   const [value, setValue] = useState(defaultValue);
 
   const plus = () => {
     if (value + 1 <= max) {
       setValue(value + 1);
+      onChange && onChange(value + 1);
     }
   };
 
   const minus = () => {
     if (value - 1 >= min) {
       setValue(value - 1);
+      onChange && onChange(value - 1);
     }
   };
 
