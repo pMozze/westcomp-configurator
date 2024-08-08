@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import classNames from 'classnames';
 
 import ExpandIcon from '@icons/expand.svg?react';
 import ChevronUpIcon from '@icons/chevron-up.svg?react';
@@ -12,13 +13,14 @@ interface Props {
   items: IConfiguratorItem[];
   name?: string;
   limit?: number;
+  className?: string;
 }
 
-const ConfiguratorItemsList: FC<Props> = ({ items, name, limit = 5 }) => {
-  const [isExpanded, setIsExpanded] = useState(true);
+const ConfiguratorItemsList: FC<Props> = ({ items, name, limit = 5, className }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className={styles.wrapper}>
+    <div className={classNames(styles.wrapper, className)}>
       {items.length <= limit ? (
         items.map((item, itemIndex) => (
           <ConfiguratorItem key={itemIndex} {...item} className={styles.configuratorItem} groupName={name} />

@@ -1,0 +1,9 @@
+.wrapper {
+  margin-inline: 15px;
+  min-width: 100px;
+}
+
+.slider {
+  padding: 0;
+  height: 20px;
+}

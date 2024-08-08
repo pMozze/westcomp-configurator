@@ -1,3 +1,4 @@
-.wrapper {
-  /* padding-inline: 30px; */
+.configuratorItemsList,
+.configuratorFilters {
+  margin-top: 10px;
 }

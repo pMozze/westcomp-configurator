@@ -1,0 +1,50 @@
+.wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding-inline: 25px 30px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.title {
+  display: flex;
+  margin-left: 12px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: var(--color-black);
+}
+
+.titleTooltip {
+  margin-left: 5px;
+}
+
+.limitText {
+  margin-left: 10px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--color-gray);
+}
+
+.limitText b {
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+.resetFiltersButton {
+  position: absolute;
+
+  top: 0;
+  right: 30px;
+
+  font-size: 10px !important;
+}
